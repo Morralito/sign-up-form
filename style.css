@@ -248,10 +248,10 @@ input[type='password']:focus {
     box-shadow: 2px 2px 4px 0px rgba(0,0,0, .3);
 }
 
-.error {
-    outline: 1px solid #ba1c19 !important;
-}
-
 .pass {
     outline: 1px solid #33b639 !important;
+}
+
+.error {
+    outline: 1px solid #ba1c19 !important;
 }
