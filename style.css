@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Roboto:wght@700&family=Titan+One&display=swap');
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  @font-face {
+    font-family: 'norsebold';
+    src: url('norse-bold-webfont.woff2') format('woff2'),
+         url('norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* ///////////////////////////////////////////////////////// */
+body {
+    min-height: 100vh;
+    height: 100vh;
+}
+.container {
+    display: flex;
+}
+
+.bgimage {
+    height: 100vh;
+    min-height: 100vh;
+    width: 30vw;
+    min-width: 30vw;
+    background-image: url('palms.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    background-color: rgba(0,0,0, .5);
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 10vw;
+}
+
+img + p {
+    font-family: 'norsebold', sans-serif;
+    color: #fff;
+    font-size: 450%;
+}
+
+/* ------------------------- form */
+
+.form{
+    height: 100vh;
+    min-height: 100vh;
+    width: 70vw;
+    min-width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.intro-text-container, .form-container, .form-container + p {
+    display: flex;
+    height: 33.3333333333vh;
+}
+
+.intro-text-container {
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    height: 95%;
+    width: 100%;
+}
+
+fieldset {
+    height: inherit;
+    width: 100%;
+    border: none;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0, .3);
+    padding: 0;
+}
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+li {
+    display: flex;
+    list-style-type: none;
+    flex-basis: 50%;
+    /* border: 0.1px solid; */
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+li:nth-child(odd) > div{
+    padding-left: 4rem;
+}
+
+li:nth-child(even) > div{
+    /* margin-left: -10rem; */
+}
+
+input {
+    width: 20rem;
+    margin-bottom: 1rem;
+}
+
+legend {
+    padding-left: 4rem;
+    padding-bottom: 1rem;
+}
+/* colors, fonts and stuff */
+
+.intro-text-container, .form-container + p, .form-container {
+    background-color: #fffaea;
+}
+
+fieldset{
+    background-color: #ffffed;
+}
+
+.intro-text {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.56rem;
+    padding-bottom: 1rem;
+    padding-left: 4rem;
+    font-weight: bold;
+}
+
+legend {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.56rem;
+}
+
+label {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: .7rem;
+    letter-spacing: 2px;
+}
+
+button {
+    margin-left: 4rem;
+    background-color: #596D48;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: .8rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.form-container + p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: .8rem;
+    padding-left: 4rem;
+    font-weight: bold;
+
+}
+
+p>a {
+    padding-left: 5px;
+    text-decoration: none;
+    color: #536838;
+}
